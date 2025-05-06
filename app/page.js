@@ -1,8 +1,8 @@
 export default function Home() {
   return (
-    <section>
-      <h2 className="text-3xl font-bold mb-4">Welcome to My Business</h2>
-      <p>We provide Microsoft 365, Power Platform, and secure cloud solutions.</p>
-    </section>
-  )
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
+      <h1 className="text-4xl font-bold text-blue-600">Welcome to Your Business</h1>
+      <p className="mt-4 text-lg text-gray-700">Built with Next.js and Tailwind CSS</p>
+    </div>
+  );
 }
