@@ -1,7 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="p-4 text-center text-sm border-t dark:border-gray-700">
-      © {new Date().getFullYear()} My Business. All rights reserved.
+    <footer className="bg-gray-800 text-white p-4 mt-auto">
+      <div className="container mx-auto text-center">
+        <p>© 2025 Your Business. All rights reserved.</p>
+      </div>
     </footer>
-  )
+  );
 }
