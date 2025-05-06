@@ -1,18 +1,23 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import './globals.css';
+import { Inter } from 'next/font/google';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
+
+export const metadata = {
+  title: 'Next.js Business Site',
+  description: 'A business site built with Next.js and Tailwind CSS',
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-white text-gray-900 dark:bg-gray-900 dark:text-white`}>
+      <body className={inter.className}>
         <Header />
-        <main className="min-h-screen px-4 py-8 max-w-4xl mx-auto">{children}</main>
+        {children}
         <Footer />
       </body>
     </html>
-  )
+  );
 }
